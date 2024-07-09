@@ -26,10 +26,8 @@ const updateCustomer = async (req, res) => {
         return res.status(404).json({ message: "Customer not found" });
     }
 
-    customer.firstName = req.body.firstName;
-    customer.lastName = req.body.lastName;
+    customer.customerName = req.body.name;
     customer.email = req.body.email;
-    customer.phoneNumber = req.body.phoneNumber;
 
     await customerRepo.save(customer);
 
