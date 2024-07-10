@@ -37,7 +37,7 @@ dataSource
         console.log("Database connected!!");
 
         app.listen(8005, () => {
-            console.log("Order Service running on Port 8004");
+            console.log("Order Service running on Port 8005");
         });
     })
     .catch((err) => {
